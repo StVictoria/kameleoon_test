@@ -1,0 +1,32 @@
+.searchInputWrapper {
+  position: relative;
+  margin-top: 40px;
+}
+
+.searchInput {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-radius: 15px;
+  padding: 16px 0;
+  padding-left: 40px;
+
+  &::placeholder {
+    color: #d1d1d1;
+    font-size: 14px;
+  }
+}
+
+.searchIcon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.testsAmount {
+  position: absolute;
+  right: 16px;
+  top: 0;
+  font-size: 14px;
+  color: #d1d1d1;
+}
