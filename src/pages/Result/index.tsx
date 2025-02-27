@@ -1,7 +1,16 @@
 import { FC } from "react";
+import { useParams } from "react-router";
+import TestData from "../../shared/components/TestData";
 
 const Results: FC = () => {
-  return <div>Result</div>;
+  const { id } = useParams();
+
+  return (
+    <>
+      <h1>Result</h1>
+      <TestData testId={Number(id)} />
+    </>
+  );
 };
 
 export default Results;
