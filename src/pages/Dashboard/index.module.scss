@@ -1,6 +1,6 @@
 .searchInputWrapper {
   position: relative;
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 .searchInput {
@@ -29,4 +29,77 @@
   top: 0;
   font-size: 14px;
   color: #d1d1d1;
+}
+
+.table {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+
+  thead {
+    th {
+      color: #999999;
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.row {
+  font-size: 13px;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  transition: 0.4s box-shadow;
+
+  &:hover {
+    box-shadow: 0px 0px 20px 0px #00000026;
+  }
+}
+
+.cell {
+  position: relative;
+  color: #5c5c5c;
+  padding: 30px;
+
+  &.status {
+    font-weight: 600;
+  }
+
+  &.stopped {
+    color: #fe4848;
+  }
+  &.paused {
+    color: #ff8346;
+  }
+  &.online {
+    color: #1bda9d;
+  }
+
+  &:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #ec4899;
+  }
+}
+
+.rowLink {
+  font-weight: 600;
+  color: white;
+  background-color: #2ee5ac;
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  &.draft {
+    background-color: #7d7d7d;
+  }
 }
